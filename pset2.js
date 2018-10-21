@@ -66,8 +66,8 @@ const removeOdds = (arr)=>{
     let i = [0]
 
     for (let i = 0; i < arr.length; i++){
-        if (arr[i]===[typeof'string']){
-            arr.pop(i)
+        if (typeof arr[i]!=='number'){
+           continue;
         }
           
      if (arr[i] % 2 ===0){
